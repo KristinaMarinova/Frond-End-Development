@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('./reset.css');
+@import url('./typography.css');
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div.center {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    max-width: 30rem;
+}
+
+div.center h1 {
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.form {
+    background-color: #FFF;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 0 1.5rem;
+}
+
+.input-group {
+    flex-basis: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    display: flex;
+}
+
+.label-icon {
+    position: absolute;
+    top: 0;
+    left: 2.6rem;
+    z-index: 1;
+    color: #C1C1C1;
+}
+
+.form .input-group:last-child {
+    margin-bottom: 0;
+}
+
+.input-group input {
+    flex-basis: 100%;
+    border: none;
+    padding-left: 7rem;
+    padding-bottom: 0.7rem;
+    outline: none;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #EEE;
+}
+
+.input-group input:hover,
+.input-group input:focus {
+    border-bottom: 1px solid orange;
+}
+
+.input-group button {
+    width: 47%;
+    background-color: #D41872;
+    color: white;
+    border: 2px solid #D41872;
+    border-radius: 4rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.input-group button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #D41872;
+}
