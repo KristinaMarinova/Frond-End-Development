@@ -1,0 +1,79 @@
+.c-button{
+    margin-right: 10px;
+    border: 0;
+    background: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.c-button--primary{
+    background-color: #FFA000;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+    font-family: "Lato";
+}
+
+.c-button--secondary{
+    background-color: white;
+    border: 1px solid  #FFA000;
+    border-radius: 50px;
+    color: #FFA000; 
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 900;
+}
+
+.c-button--secondary:hover{
+    background-color: rgba(255,160,0,0.06);
+}
+
+.c-button--secondary .c-button--disabled{
+    color: rgba(255,160,0,0.2);
+    color: #D6D6D6;
+}
+
+.c-button--disabled-pressed{
+    border: 1px solid #D6D6D6;
+    color: #D6D6D6;
+    background-color: white;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 900;
+}
+
+.c-button:hover{
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.c-button--disabled{
+    background-color: #D6D6D6;
+    font-weight: 900;
+    box-shadow: none;
+}
+
+.c-button--disabled:hover{
+    cursor: not-allowed;
+}
+
+
+.c-button--secondary .c-button--disabled{
+    background-color: #D6D6D6;
+    color: #fff;
+}
+
+.c-button--disabled:hover{
+    cursor: not-allowed;
+}
+
+.c-button--small{
+    padding: 5px 10px;
+    border-radius: 20px;
+}
