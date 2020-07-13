@@ -1,8 +1,10 @@
 a {
-    font-size: 16px;
+    font: inherit;
+    color: #3E4C5D;
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus {
     text-decoration: underline;
 }
