@@ -1,0 +1,20 @@
+@media only screen and (max-width: 884px) {
+    .newsletter-boxes {
+        display: flex;
+        display: block;
+    }
+    .newsletter-bottom {
+        display: flex;
+    }
+    .newsletter-bottom>article>h4 {
+        text-align: left;
+    }
+
+    .newsletter-bottom-content{
+        text-align: left;
+    }
+
+    .bottom-logo{
+        width: 16%;
+    }
+}
