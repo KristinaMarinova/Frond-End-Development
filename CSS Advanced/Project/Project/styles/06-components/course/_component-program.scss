@@ -1,0 +1,130 @@
+.c-program {
+  &--orange {
+    background-color: $secondary-900;
+  }
+  margin-bottom: 59px;
+  .o-page-content-wrapper {
+    @include for-desktop-up {
+      display: grid;
+      grid-template-columns: 700px 1fr;
+    }
+  }
+
+  position: relative;
+  margin-top: 59px;
+  padding-bottom: 69px;
+  &::before {
+    @extend %pseudo;
+    border: 10px dotted $white;
+    border-style: none none dotted;
+    top: -5px;
+    left: -5px;
+  }
+
+  &::after {
+    @extend %pseudo;
+    border: 10px dotted $white;
+    border-style: none none dotted;
+    bottom: -5px;
+    left: -5px;
+  }
+
+  &__lists-training-img {
+    display: none;
+    @include for-desktop-up {
+      display: block;
+      justify-self: center;
+      align-self: flex-end;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 59px;
+
+    img {
+      margin-bottom: 40px;
+      @include for-desktop-up {
+        margin: 0 0 24px 0;
+      }
+    }
+
+    h2 {
+      color: $grey-700;
+      width: 80%;
+      margin: 0 16px;
+      @include for-desktop-up {
+        margin-bottom: 24px;
+        margin-left: 31px;
+      }
+    }
+  }
+
+  &__description {
+    margin: 0;
+    color: $grey-700;
+
+    @include for-desktop-up {
+      margin: 0 0 0 63px;
+    }
+  }
+
+  h5 {
+    color: $grey-700;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  &__classes {
+    @include for-desktop-up {
+      margin: 0 0 0 63px;
+    }
+    div {
+      img {
+        cursor: pointer;
+      }
+      padding-bottom: 69px;
+      display: grid;
+      grid-template-columns: min-content 1fr min-content;
+
+      align-items: center;
+      background-color: $white;
+      padding: 14px 14px 14px 14px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      width: 85%;
+      margin: 0;
+      @include for-desktop-up {
+        width: 100%;
+      }
+    }
+
+    p,
+    span {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color: $grey-700;
+    }
+
+    .third {
+      margin-bottom: 45px;
+      @include for-desktop-up {
+        margin-bottom: 0px;
+      }
+    }
+
+    .fourth {
+      margin-bottom: 22px;
+      @include for-desktop-up {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.c-contacts {
+  min-width: 300px;
+  height: auto;
+  background-color: $white;
+  box-shadow: $shadow-1dp;
+  border-radius: 12px;
+  position: absolute;
+  z-index: 0;
+  top: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  article {
+    padding-bottom: 40px;
+    @include for-desktop-up {
+      padding: 0;
+    }
+  }
+
+  h4 {
+    text-align: center;
+    color: $primary-300;
+    margin: 0 0 18px 0;
+    @include for-desktop-up {
+      text-align: start;
+    }
+  }
+
+  p {
+    text-align: center;
+    color: $grey-700;
+    width: 100%;
+    @include for-desktop-up {
+      text-align: start;
+    }
+  }
+
+  span {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: $grey-700;
+    margin: 0 0 12px 0;
+  }
+
+  &__address {
+    p {
+      @include for-desktop-up {
+        width: 90%;
+      }
+    }
+  }
+
+  &__contacts {
+    @include for-desktop-up {
+      grid-row: 2 / 3;
+
+      p {
+        margin: 0 0 12px 0;
+      }
+    }
+  }
+
+  &__work-time {
+    &__workweek {
+      text-align: center;
+      @include for-desktop-up {
+        text-align: start;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      &__period {
+        color: $secondary-800 !important;
+      }
+    }
+
+    &__weekend {
+      text-align: center;
+      @include for-desktop-up {
+        text-align: start;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      &__period {
+        color: $secondary-800 !important;
+      }
+    }
+  }
+
+  @include for-desktop-up {
+    width: 520px;
+    height: auto;
+    position: absolute;
+    display: grid;
+    background-color: $white;
+    left: 335px;
+    top: 274px;
+    box-shadow: $shadow-1dp;
+    border-radius: 12px;
+    .o-contacts-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr min-content min-content;
+      grid-row-gap: 14px;
+      grid-column-gap: 24px;
+    }
+  }
+}

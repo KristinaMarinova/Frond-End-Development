@@ -1,0 +1,75 @@
+.c-form {
+  margin-top: 50px;
+  position: relative;
+  &::before {
+    @extend %pseudo;
+    height: 12px;
+    background-color: $blue-200;
+  }
+  .o-page-content-wrapper {
+    display: grid;
+    grid-template-rows: min-content min-content 1fr;
+  }
+  background-color: $blue-300;
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: $white;
+    margin: 64px 0 0 0;
+    justify-self: center;
+    @include for-desktop-up {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+
+  &__description {
+    color: $white;
+    margin: 24px 0 64px 0;
+    width: 90%;
+
+    @include for-desktop-up {
+      justify-self: center;
+      text-align: center;
+      width: 72%;
+    }
+  }
+
+  form {
+    display: grid;
+    grid-template-rows: min-content min-content min-content min-content;
+    justify-items: center;
+    grid-row-gap: 36px;
+
+    @include for-desktop-up {
+      margin: 0 0 128px 0;
+      display: grid;
+      grid-template-columns: 228px 228px 228px min-content;
+      grid-template-rows: min-content;
+      justify-content: center;
+      grid-column-gap: 32px;
+    }
+
+    input {
+      width: 100%;
+      background: $blue-300;
+      border: 1px solid $white;
+      color: $white;
+      &::placeholder {
+        color: $white;
+      }
+      &:focus {
+        outline: none !important;
+        border-color: $white;
+        box-shadow: 0 2px 10px $secondary-800;
+      }
+
+      @include for-desktop-up {
+        width: 228px;
+      }
+    }
+  }
+}

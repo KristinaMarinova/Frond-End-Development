@@ -1,0 +1,92 @@
+.c-description {
+  margin-top: -11px;
+  .o-page-content-wrapper {
+    @include for-desktop-up {
+      margin-bottom: 148px;
+      display: grid;
+      grid-template-columns: 1fr min-content;
+      grid-row-gap: 82px;
+    }
+  }
+  &__info {
+    margin-bottom: 32px;
+    p {
+      color: $grey-700;
+    }
+  }
+
+  &__media {
+    position: relative;
+    margin-bottom: 64px;
+    @include for-desktop-up {
+      margin: 0;
+      width: 440px;
+      height: 280px;
+      justify-self: end;
+      align-self: center;
+    }
+    &__img {
+      width: 100%;
+    }
+
+    &__play {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__cart-info {
+    position: relative;
+    margin-bottom: 74px;
+    &__title {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-column-gap: 16px;
+
+      @include for-desktop-up {
+        grid-column-gap: 32px;
+      }
+    }
+
+    h2 {
+      color: $grey-700;
+      margin: 0;
+    }
+    p {
+      color: $grey-700;
+      a {
+        color: $secondary-800;
+      }
+      @include for-desktop-up {
+        margin-left: 66px;
+        width: 482px;
+      }
+    }
+
+    @include for-desktop-up {
+      .display-none {
+        display: none;
+      }
+      margin: 0;
+    }
+  }
+}
+
+.dotted {
+  position: relative;
+  &::before {
+    @extend %pseudo;
+    border: 10px dotted $secondary-100;
+    border-style: none none dotted;
+    bottom: -40px;
+
+    @include for-desktop-up {
+      border-style: none dotted none none;
+      top: 0px;
+      height: 100%;
+      right: 50px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.c-welcome-section {
+  background-color: $secondary-600;
+  padding: 64px 0;
+
+  &__title {
+    h1 {
+      font-weight: 600;
+      line-height: 44px;
+      margin: 0em;
+      position: relative;
+      color: $white;
+      text-align: center;
+      animation: heading;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+    }
+
+    p {
+      position: relative;
+      color: $white;
+      margin: 0 auto;
+      text-align: center;
+      margin: 24px 0px 0px 0px;
+
+      animation: content;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+
+      @include for-desktop-up {
+        margin: 24px auto;
+        width: 66%;
+      }
+    }
+  }
+}

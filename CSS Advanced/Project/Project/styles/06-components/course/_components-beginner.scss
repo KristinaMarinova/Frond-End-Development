@@ -1,0 +1,47 @@
+.c-beginner {
+  &--blue {
+    height: 302px;
+    background-color: $blue-400;
+  }
+  color: $white;
+  text-align: center;
+  padding: 64px 0 52px 0;
+
+  &__info {
+    &__label {
+      position: relative;
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      display: inline-block;
+      background-color: $secondary-500;
+      padding: 4px 8px;
+      box-shadow: $shadow-1dp;
+      border-radius: 4px;
+      text-transform: uppercase;
+      color: $white;
+      animation: heading;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+    }
+
+    &__title {
+      margin: 28px auto;
+
+      p {
+        position: relative;
+        margin: 0;
+        animation: content;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        width: 99%;
+        @include for-desktop-up {
+          width: 49%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
