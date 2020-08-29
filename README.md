@@ -17,6 +17,8 @@
 
 :diamond_shape_with_a_dot_inside: [Exams](https://github.com/KristinaMarinova/Frond-End-Development/tree/master/HTML%20and%20CSS/Exams)
 
+:diamond_shape_with_a_dot_inside: [Certificate](https://softuni.bg/certificates/certificates/converttoimage/86654?code=4c696a97)
+
 ## **CSS Advanced**
 :diamond_shape_with_a_dot_inside: [CSS architecture- ITCSS](https://github.com/KristinaMarinova/Frond-End-Development/tree/master/CSS%20Advanced/01.%20CSS%20ARCHITECTURE%20-%20IT%20CSS)
 
@@ -27,3 +29,5 @@
 :diamond_shape_with_a_dot_inside: [CSS Transitions Animations and Transformations](url)
 
 :diamond_shape_with_a_dot_inside: [CSS Grid Layout ](https://github.com/KristinaMarinova/Frond-End-Development/tree/master/CSS%20Advanced/05.%20CSS%20GRID)
+
+:diamond_shape_with_a_dot_inside: [Certificate](https://softuni.bg/certificates/certificates/converttoimage/86677?code=92f738c5)
