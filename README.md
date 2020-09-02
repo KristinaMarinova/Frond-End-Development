@@ -1,4 +1,3 @@
- <img src="https://www.ticlic.info/redone/wp-content/uploads/2019/06/htmlcss.png" width="400" height="200" />
 
 ## **HTML and CSS**
 :diamond_shape_with_a_dot_inside: [Introduction to HTML and CSS](https://github.com/KristinaMarinova/Frond-End-Development/tree/master/HTML%20and%20CSS/01.%20Introduction%20to%20HTML%20and%20CSS)
